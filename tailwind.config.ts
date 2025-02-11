@@ -141,6 +141,17 @@ const config = {
             transform: "translateY(-50%)",
           },
         },
+        meteor: {
+          "0%": {
+            transform: "rotate(var(--angle)) translateX(0)",
+            opacity: "1",
+          },
+          "70%": { opacity: "1" },
+          "100%": {
+            transform: "rotate(var(--angle)) translateX(-500px)",
+            opacity: "0",
+          },
+        },
         scroll: {
           to: {
             transform: "translate(calc(-50% - 0.5rem))",
@@ -159,6 +170,7 @@ const config = {
         fifth: "moveInCircle 20s ease infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        meteor: "meteor 5s linear infinite",
       },
     },
   },

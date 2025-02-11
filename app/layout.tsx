@@ -7,7 +7,7 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Dafi Portfolio",
+  title: "Dafi Utomo",
   description: "Welcome to the Dafi Page!",
 };
 
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/" sizes="any" />
+        <link rel="icon" href="/D Logo (Light).svg" sizes="any" />
       </head>
       <body className={inter.className}>
         <ThemeProvider
