@@ -1,11 +1,11 @@
 import React from "react";
 import { SparklesCore } from "./ui/Sparkles";
 import { Span } from "next/dist/trace";
-
+import { projects } from "@/data";
 const RecentProject = () => {
   return (
     <>
-      <div className="py-32" id="projects">
+      <div className="pt-32" id="projects">
         <div className="flex flex-col items-center justify-center overflow-hidden rounded-md relative">
           <h1 className="heading pb-3 text-center">
             A Few Things I've Been{" "}
@@ -37,7 +37,7 @@ const RecentProject = () => {
             ></div>
           </div>
         </div>
-        awdaiwjdiawjd
+        Coming Soon
       </div>
     </>
   );
