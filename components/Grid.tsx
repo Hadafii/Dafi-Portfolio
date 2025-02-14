@@ -4,7 +4,8 @@ import Image from "next/image";
 import { BorderBeam } from "./ui/Moving-border";
 import { Meteors } from "./ui/MeteorEffect";
 import { CardContainer, CardBody, CardItem } from "./ui/3d-card";
-
+import { ShinyButton } from "./ui/ShinyButton";
+import { FiDownload } from "react-icons/fi";
 const Grid = () => {
   return (
     <section id="about">
@@ -58,6 +59,18 @@ const Grid = () => {
               <p className="mt-4">
                 Let's connect and build something awesome together! 🚀
               </p>
+              {/* Buttons */}
+              <div className="flex justify-center mt-6 space-x-4">
+                <ShinyButton
+                  href="/DAFI_CV.pdf"
+                  variant="glow"
+                  download
+                  icon={<FiDownload />}
+                  position="right"
+                >
+                  Download CV
+                </ShinyButton>
+              </div>
             </div>
 
             <BorderBeam size={100} />

@@ -94,6 +94,8 @@ export const GlowingGridItem = ({
         }}
       >
         <GlowingEffect
+          blur={0}
+          borderWidth={2.5}
           spread={40}
           glow={true}
           disabled={false}
